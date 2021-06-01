@@ -52,12 +52,14 @@ const numCondes = Number(condes);
 if (numCondes === 1) {
     console.log('Awesome, you Artist! I know you had it in you.');
     console.log(' Your options are');
-    console.log('   Red   |||   Blue   |||   Yellow   ')
-    const color1 = prompt(' What is your first color choice?  ');
-    const color2 = prompt(' What about your second color choice?  ');
+    console.log('   1-Red   |||   2-Blue   |||   3-Yellow   ')
+    const color1 = prompt(' What is the number your first color choice?  ');
+    const color2 = prompt(' What about the number of your second color choice?  ');
+    const numColor1 = Number(color1);
+    const numColor2 = Number(color2);
 
 
-    if (color1 === 'red' && color2 === 'blue') {
+    if (numColor1 === (1 || 2) && numColor2 === (1 || 2)) {
         console.log('The Color Purple');
         console.log('Did you know that this book, by Alice Walker, was the first Pulitzer Prize to be awarded to a black woman.');
     } else
