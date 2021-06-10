@@ -15,7 +15,7 @@ console.log('(2) - Deconstruct Colors')
 let desCon = prompt('Please Enter your choice now.');
 let desConNum = Number(desCon);
 // If the user chooses to combine, prompt them for two colors (one at a time). Combine the colors (using if, else if, and else statements) then log the result.
-if (desConNum = 1) {
+if (desConNum === 1) {
     console.log('Your color choices are:')
     console.log('(1) - Red');
     console.log('(2) - Blue')
@@ -54,6 +54,28 @@ if (desConNum = 1) {
         console.log('error');
     }
 }
+
+if (desConNum === 2) {
+    console.log('Your color choices are:')
+    console.log('(1) - Purple');
+    console.log('(2) - Orange')
+    console.log('(3) - Green')
+    let colorChoice1 = prompt('Enter the number of your first choice?   ');
+    let numColorChoice1 = Number(colorChoice1);
+    if (numColorChoice1 === 1) {
+        console.log('Deconstructs to: Red and Blue');
+    }
+    if (numColorChoice1 === 2) {
+        console.log('Orange desconstructs to: Red and Yellow')
+    }
+    if (numColorChoice1 === 3) {
+        console.log('Green deconstructs to Blue and Yellow')
+
+    } else {
+        console.log('error');
+    }
+}
+
 
 // If the user chooses to deconstruct, prompt them for a single color. Deconstruct the color (using if, else if, and else statements) then log the result.
 
